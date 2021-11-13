@@ -1,5 +1,4 @@
 opencv-contrib-python
-streamlit
 json
 datetime
 pillow
