@@ -1,6 +1,6 @@
 import cv2
 def capture(user_id):
-    print ("capturing user")
+    # print ("capturing user")
     # print (user_id)
     camera = cv2.VideoCapture(0)
     face_dectector= cv2.CascadeClassifier("D:\Image processing\AlgoExperts\Face_dec.xml")
@@ -9,7 +9,7 @@ def capture(user_id):
 
     while True:
         success, frame = camera.read()
-        print ("Taking images")
+        # print ("Taking images")
         frame = cv2.flip(frame, 1)
         grey=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
         faces= face_dectector.detectMultiScale(grey,minNeighbors=6)

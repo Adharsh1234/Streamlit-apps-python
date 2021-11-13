@@ -6,7 +6,7 @@ import web_train
 import datetime as dt
 
 st.title("Smart Attendence Listing Web")
-camera = cv2.VideoCapture(0)
+# camera = cv2.VideoCapture(0)
 text_inputs = st.sidebar.text_input("Please enter your Full Name: ")
 register_button = st.sidebar.button("Register Now")
 img_placeholder1 = st.empty()
@@ -20,7 +20,7 @@ if register_button:
         open_db.seek(0)
         json.dump(load_db,open_db)
         # print(load_db)
-        print(text_inputs)
+        # print(text_inputs)
         frame=web_data.capture(len(load_db))
         frame=cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         img_placeholder1.image(frame)

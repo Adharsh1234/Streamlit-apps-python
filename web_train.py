@@ -21,7 +21,7 @@ def trainer():
         ids.append(int(get_id))
 
 
-    print("Training Face Recognition Started")
+    # print("Training Face Recognition Started")
     recognizer.train(face_list,np.array(ids))
     recognizer.write("My_Web_Model.xml")
-    print("Training Face Recognition Completed")
+    # print("Training Face Recognition Completed")
