@@ -1,4 +1,3 @@
-opencv-python
 datetime
 pillow
 numpy
