@@ -1,5 +1,4 @@
 opencv-contrib-python
-json
 datetime
 pillow
 numpy
