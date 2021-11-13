@@ -5,7 +5,7 @@ import json
 import web_train
 import datetime as dt
 
-camera = cv2.VideoCapture(0)
+# camera = cv2.VideoCapture(0)
 st.title("Smart Attendence Listing Web")
 # text_inputs = st.sidebar.text_input("Please enter your Full Name: ")
 # register_button = st.sidebar.button("Register Now")
